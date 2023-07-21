@@ -27,6 +27,12 @@ body {
   color: var(--cover-text-color);
   background-size: cover;
 
+  .language-switcher {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
   /* Big cover video at the landing area */
   video {
     bottom: 0;
@@ -90,6 +96,16 @@ body {
       color: var(--highlight-inverse-contrast);
       background-color: var(--highlight-inverse);
     }
+  }
+
+  a.btn.small {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin: 0;
+  }
+  a.btn.small.active {
+      color: var(--highlight-inverse-contrast);
+      background-color: var(--highlight-inverse);
   }
 
   /** The arrow button to scroll to content */

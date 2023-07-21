@@ -10,6 +10,11 @@
 {{ else }}
 <header id="site-head">
 {{ end }}
+    <div class="language-switcher">
+        {{ range $.Site.Home.AllTranslations }}
+            <a class="btn small {{ if eq .Language $.Site.Language }}active{{ end }}" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        {{ end }}
+    </div>
 
     <div class="vertical">
 
