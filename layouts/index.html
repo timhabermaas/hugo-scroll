@@ -10,12 +10,6 @@
 {{ else }}
 <header id="site-head">
 {{ end }}
-    <div class="language-switcher">
-        {{ range $.Site.Home.AllTranslations }}
-            <a class="btn small {{ if eq .Language $.Site.Language }}active{{ end }}" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-        {{ end }}
-    </div>
-
     <div class="vertical">
 
         {{ if .Params.header_use_video }}
@@ -49,6 +43,12 @@
                 <a id='header-arrow' href="#{{- anchorize $first_title -}}" aria-label="Go to first section"><i class="fa fa-angle-down"></i></a>
             {{ end }}
         </div>
+    </div>
+
+    <div class="language-switcher">
+        {{ range $.Site.Home.AllTranslations }}
+            <a class="btn small {{ if eq .Language $.Site.Language }}active{{ end }}" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        {{ end }}
     </div>
 </header>
 
