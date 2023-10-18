@@ -34,8 +34,15 @@
     /* Light&Dark section `code` a bit darker than 'Light section - background color' */
     --section-uni-code-bg-color: #e0ded7;
 
+    /* === Single pages=== */
+    --single-page-text-color: var(--section-light-text-color);
+    --single-page-bg-color: var(--section-light-bg-color);
 
     /* === Footer === */
     --footer-color-background: #22343a;
     --footer-color: #bbc7cc;
+
+    /* === Lists === */
+    /* define list element for unnumbered lists, leave empty for default list element */
+    --ul-li-icon: fa-asterisk;
 }
